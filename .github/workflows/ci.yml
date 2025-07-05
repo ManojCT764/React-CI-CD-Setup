@@ -35,11 +35,11 @@ jobs:
             - name: "Lint the code"
               run: npm run lint
 
-            # - name: "Run tests"
-            #   run: npm test
+            - name: "Run tests"
+              run: npm test
 
-            # - name: "Build the application"
-            #   run: npm run build
+            - name: "Build the application"
+              run: npm run build
 
             - name: "Upload project artifacts (product-ready build files)"   #u
               uses: actions/upload-artifact@v4
