@@ -11,8 +11,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:                           #ref = https://github.com/actions/setup-node
             - name: "Setup Node JS"
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v4        #we are using github action command thats why we are using keyword "uses"
               with:
                 node-version: '21'
                 # cache: 'npm'
             
+            - name: "Check version"
+              run: node --version     #we are using a linux command so we are using keyword "run"
