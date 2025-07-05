@@ -1,4 +1,4 @@
-name: "Sample React CI Pipeline /Workflow"
+name: "Sample React CI Pipeline / Workflow For React Project"
 
 on:
   push:
@@ -34,3 +34,9 @@ jobs:
 
             - name: "Lint the code"
               run: npm run lint
+
+            # - name: "Run tests"
+            #   run: npm test
+
+            # - name: "Build the application"
+            #   run: npm run build
